@@ -1,5 +1,6 @@
 # IDE
 .idea
+*sublime*
 
 # Don’t commit the following directories created by pub.
 build/
