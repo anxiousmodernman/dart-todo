@@ -1,0 +1,34 @@
+<div id="list-manager">
+
+  <div id="list-of-lists">
+    <ul>
+      <li ng-repeat="list in cmp.allLists">
+        {{ list.name }}
+      </li>
+    </ul>        
+  </div>
+  
+  <div list-view>
+    <ul>
+      <li ng-repeat="list in cmp.activeLists">
+      
+      
+        <div>
+          <h1>{{ list.name }}</h1>
+          <fieldset>
+            <input type="text" placeholder="new task">
+            <button>+</button>
+          </fieldset>
+          <ul>
+            <li ng-repeat="task in list.tasks">
+              {{ list.text }}
+            </li>
+          </ul>
+        </div>
+        
+        
+      </li>  
+    </ul>
+  </div>
+
+</div>
